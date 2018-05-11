@@ -1,2 +1,2 @@
-insert into user(no, id, password, create_datetime) values (1, 'abc', '1234', current_date );
-insert into user(no, id, password, create_datetime) values (2, 'def', '1234', current_date);
+insert into user(no, id, password, name, create_datetime) values (3, 'abc', '1234', '강현지', current_date );
+insert into user(no, id, password, name, create_datetime) values (4, 'def', '1234', '강주영', current_date);
