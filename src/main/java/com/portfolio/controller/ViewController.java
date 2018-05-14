@@ -16,4 +16,21 @@ public class ViewController {
     public String sample(){
         return "sample";
     }
+
+
+    /**
+     * @methodName : main
+     * @author : khj1219
+     * @date : 2018.05.14. 오후 03:36:11
+     * @explain : tiles 테스트
+     **/
+    @GetMapping("/main")
+    public String main() {
+        return "main";
+    }
+
+    @GetMapping("/layout")
+    public String layout() {
+        return "layout";
+    }
 }
