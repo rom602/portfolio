@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>main</title>
+    <title>My Design</title>
     <link rel="stylesheet" href="/resources/css/main.css"/>
     <style>
         /* reset css */

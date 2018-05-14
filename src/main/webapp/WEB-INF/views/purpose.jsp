@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>main</title>
+    <title>Purpose</title>
     <link rel="stylesheet" href="/resources/css/main.css"/>
     <style>
         /* reset css */
@@ -13,26 +13,6 @@
         /* body 일괄 적용 css */
         body {
             font-family: "Nanum Gothic", sans-serif;
-        }
-        .menu {
-            overflow: auto;
-            border-top: 1px solid #e4e4e4;
-        }
-        .main-title {
-            padding: 20px 0;
-            text-align: center;
-            border-top: 1px solid #e4e4e4;
-        }
-        ul {
-            list-style-type: none;
-            text-align: center;
-        }
-        li {
-            display: inline-block;
-            padding-right: 40px;
-            font-size: 18px;
-            line-height: 30px;
-            color: #222;
         }
         .main-content {
             width: 100%;
@@ -56,18 +36,6 @@
     </style>
 </head>
 <body>
-<div class="main-title">
-    <h1>Interior Design</h1>
-</div>
-<div class="menu">
-    <ul>
-        <li><a href="main.html">MAIN</a></li>
-        <li><a href="profile.html">PROFILE</a></li>
-        <li><a href="my-design.html">MY DESIGN</a></li>
-        <li><a href="project.html">PROJECT</a></li>
-        <li><a href="purpose.html">PURPOSE</a></li>
-    </ul>
-</div>
 <div class = "main-content">
     <div class="main-image">
         <div style="float: left" class="description">

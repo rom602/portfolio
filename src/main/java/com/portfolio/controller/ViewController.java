@@ -22,15 +22,54 @@ public class ViewController {
      * @methodName : main
      * @author : khj1219
      * @date : 2018.05.14. 오후 03:36:11
-     * @explain : tiles 테스트
+     * @explain : main page
      **/
     @GetMapping("/main")
     public String main() {
         return "main";
     }
 
-    @GetMapping("/layout")
-    public String layout() {
-        return "layout";
+    /**
+     * @methodName : profile
+     * @author : khj1219
+     * @date : 2018.05.14. 오후 07:52:40
+     * @explain : profile page
+     **/
+    @GetMapping("/profile")
+    public String profile() {
+        return "profile";
+    }
+
+    /**
+     * @methodName : my-design
+     * @author : khj1219
+     * @date : 2018.05.14. 오후 07:52:56
+     * @explain : my-design page
+     **/
+    @GetMapping("/my-design")
+    public String myDesign() {
+        return "my-design";
+    }
+
+    /**
+     * @methodName : project
+     * @author : khj1219
+     * @date : 2018.05.14. 오후 07:53:02
+     * @explain : project page
+     **/
+    @GetMapping("/project")
+    public String project() {
+        return "project";
+    }
+
+    /**
+     * @methodName : purpose
+     * @author : khj1219
+     * @date : 2018.05.14. 오후 07:53:11
+     * @explain : purpose page
+     **/
+    @GetMapping("/purpose")
+    public String purpose() {
+        return "purpose";
     }
 }
