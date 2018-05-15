@@ -2,116 +2,56 @@
 
 <html>
 <head>
-    <title>main</title>
+    <title>My Design</title>
     <link rel="stylesheet" href="/resources/css/main.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <style>
-        /* reset css */
-        html, body, h1, h2, h3, h4, h5, h6, p, a {
-            margin: 0;
-            padding: 0;
+        .slider {
+            position: relative;
         }
-        /* body 일괄 적용 css */
-        body {
-            font-family: "Nanum Gothic", sans-serif;
-        }
-        .main-content {
+
+        /* 슬라이드 */
+        .slider .slides img{
+            position: absolute;
+            /* absolute 요소들 간 우선순위, 숫자가 높을 수록 보여지는 우선순위가 높아집니다. */
+            height: 550px;
             width: 100%;
-            background: #ddd;
+            z-index: 1;
+            opacity:0;
+            /* 이미지 페이드아웃, 페이드인 효과 */
+            transition: opacity 0.5s;
         }
-        .main-image {
-            overflow: hidden;
-            height: 400px;
-            margin: 0 4em 0 4em;
-            padding-top: 1em;
-        }
-        .main-image:after {
-            clear: both;
-        }
-        .description {
-            overflow: hidden;
-            width: 40%;
-            text-align: center;
-            line-height: 1.6em;
+
+        /* active 클래스를 가진 슬라이드는 불투명도를 1로 줘서 보이도록 처리 */
+        .slider .slides img.active {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-<div class = "main-content">
-    <div class="main-image">
-        <div style="float: left" class="description">
-            Interior Design's Market Live 2018 Introduces Designers to New Brands
-            On the eve of NYCxDesign, brands offered designers a look at their
-            latest offerings at Interior Design's Market Live event on May 9.
-            A curated selection of companies presented their textiles, lighting,
-            furniture, and more to more than 100 designer guests at the magazine's
-            New York City headquarters. The evening offered an opportunity for specifiers
-            to learn about new manufacturers in the marketplace while mingling with fellow
-            industry professionals over drinks and bites. It also was a chance to tour Sandow's
-            new Manhattan office, which Interior Design moved into late last year. The gathering
-            was an intimate and inspiring way to get in the spirit of design before a stimulating
-            few weeks of products and parties.
-            Interior Design's Market Live 2018 Introduces Designers to New Brands
-            On the eve of NYCxDesign, brands offered designers a look at their
-            latest offerings at Interior Design's Market Live event on May 9.
-            A curated selection of companies presented their textiles, lighting,
-            industry professionals over drinks and bites. It also was a chance to tour Sandow's
-            new Manhattan office, which Interior Design moved into late last year. The gathering
-            was an intimate and inspiring way to get in the spirit of design before a stimulating
-            few weeks of products and parties.
-        </div>
-        <img style="float:right; height: 100%" src="http://localhost:8080/resources/images/main1.jpg" alt="image error">
+<%-- https://codepen.io/jaehwy/pen/LkvPEX --%>
+<div class="slider">
+    <div class="slides">
+        <img class='active' src="http://localhost:8080/resources/images/slide1.jpg"/>
+        <img src="http://localhost:8080/resources/images/slide2.jpg"/>
+        <img src="http://localhost:8080/resources/images/slide3.jpg"/>
+        <img src="http://localhost:8080/resources/images/slide4.jpg"/>
     </div>
-    <hr>
-    <div class="main-image">
-        <img style="float:left; height: 100%" src="http://localhost:8080/resources/images/main2.jpg" alt="image error">
-        <div style="float:right;" class="description">
-            Interior Design's Market Live 2018 Introduces Designers to New Brands
-            On the eve of NYCxDesign, brands offered designers a look at their
-            latest offerings at Interior Design's Market Live event on May 9.
-            A curated selection of companies presented their textiles, lighting,
-            furniture, and more to more than 100 designer guests at the magazine's
-            New York City headquarters. The evening offered an opportunity for specifiers
-            to learn about new manufacturers in the marketplace while mingling with fellow
-            industry professionals over drinks and bites. It also was a chance to tour Sandow's
-            new Manhattan office, which Interior Design moved into late last year. The gathering
-            was an intimate and inspiring way to get in the spirit of design before a stimulating
-            few weeks of products and parties.
-            Interior Design's Market Live 2018 Introduces Designers to New Brands
-            On the eve of NYCxDesign, brands offered designers a look at their
-            latest offerings at Interior Design's Market Live event on May 9.
-            A curated selection of companies presented their textiles, lighting,
-            industry professionals over drinks and bites. It also was a chance to tour Sandow's
-            new Manhattan office, which Interior Design moved into late last year. The gathering
-            was an intimate and inspiring way to get in the spirit of design before a stimulating
-            few weeks of products and parties.
-        </div>
-    </div>
-    <hr>
-    <div class="main-image">
-        <div style="float: left;" class="description">
-            Interior Design's Market Live 2018 Introduces Designers to New Brands
-            On the eve of NYCxDesign, brands offered designers a look at their
-            latest offerings at Interior Design's Market Live event on May 9.
-            A curated selection of companies presented their textiles, lighting,
-            furniture, and more to more than 100 designer guests at the magazine's
-            New York City headquarters. The evening offered an opportunity for specifiers
-            to learn about new manufacturers in the marketplace while mingling with fellow
-            industry professionals over drinks and bites. It also was a chance to tour Sandow's
-            new Manhattan office, which Interior Design moved into late last year. The gathering
-            was an intimate and inspiring way to get in the spirit of design before a stimulating
-            few weeks of products and parties.
-            Interior Design's Market Live 2018 Introduces Designers to New Brands
-            On the eve of NYCxDesign, brands offered designers a look at their
-            latest offerings at Interior Design's Market Live event on May 9.
-            A curated selection of companies presented their textiles, lighting,
-            industry professionals over drinks and bites. It also was a chance to tour Sandow's
-            new Manhattan office, which Interior Design moved into late last year. The gathering
-            was an intimate and inspiring way to get in the spirit of design before a stimulating
-            few weeks of products and parties.
-        </div>
-        <img style="float:right; height: 100%" src="http://localhost:8080/resources/images/main3.jpg" alt="image error">
-    </div>
-    <hr>
 </div>
+<script>
+    (function(){
+        var firstSlide = document.querySelector('.slider>.slides>img');
+
+        setInterval(function(){
+            var activeSlide = document.querySelector('.active');
+
+            var postSlide = (activeSlide.nextElementSibling !== null ? activeSlide.nextElementSibling : firstSlide);
+
+            activeSlide.classList.remove('active');
+            postSlide.classList.add('active');
+        }, 2000);
+    })();
+</script>
 </body>
 </html>

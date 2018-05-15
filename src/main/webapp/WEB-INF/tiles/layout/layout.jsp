@@ -9,7 +9,7 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <html>
 <head>
-    <title>layout</title>
+    <title>Interior Design</title>
 </head>
 <body>
     <header id="header">

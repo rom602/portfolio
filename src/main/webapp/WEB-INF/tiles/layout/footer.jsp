@@ -9,6 +9,8 @@
 <html>
 <head>
     <title>footer</title>
+    <style>
+    </style>
 </head>
 <body>
     <h1>footer</h1>

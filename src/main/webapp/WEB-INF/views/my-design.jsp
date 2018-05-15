@@ -2,18 +2,9 @@
 
 <html>
 <head>
-    <title>My Design</title>
+    <title>main</title>
     <link rel="stylesheet" href="/resources/css/main.css"/>
     <style>
-        /* reset css */
-        html, body, h1, h2, h3, h4, h5, h6, p, a {
-            margin: 0;
-            padding: 0;
-        }
-        /* body 일괄 적용 css */
-        body {
-            font-family: "Nanum Gothic", sans-serif;
-        }
         .main-content {
             width: 100%;
             background: #ddd;

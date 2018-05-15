@@ -11,33 +11,34 @@
     <title>header</title>
     <style>
     /* reset css */
-    html, body, h1, h2, h3, h4, h5, h6, p, a {
-    margin: 0;
-    padding: 0;
+    html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
     }
     /* body 일괄 적용 css */
     body {
-    font-family: "Nanum Gothic", sans-serif;
+        font-family: "Nanum Gothic", sans-serif;
     }
-    .menu {
-    overflow: auto;
-    border-top: 1px solid #e4e4e4;
+    div.menu {
+        overflow: auto;
+        border-top: 1px solid #e4e4e4;
     }
-    .main-title {
-    padding: 20px 0;
-    text-align: center;
-    border-top: 1px solid #e4e4e4;
+    div.main-title {
+        padding: 20px 0;
+        text-align: center;
+        border-top: 1px solid #e4e4e4;
     }
     ul {
-    list-style-type: none;
-    text-align: center;
+        text-align: center;
+        margin: 20px 0;
     }
     li {
-    display: inline-block;
-    padding-right: 40px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #222;
+        display: inline-block;
+        padding-right: 40px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #222;
     }
     </style>
 </head>
