@@ -13,18 +13,18 @@
 </head>
 <body>
     <header class="header">
-    <div class="header-title">
-        <h1>Interior Design</h1>
-    </div>
-    <nav class="header-menu">
-        <ul>
-            <li><a href="/main">MAIN</a></li>
-            <li><a href="/profile">PROFILE</a></li>
-            <li><a href="/my-design">MY DESIGN</a></li>
-            <li><a href="/project">PROJECT</a></li>
-            <li><a href="/purpose">PURPOSE</a></li>
-        </ul>
-    </nav>
+        <div class="header-title">
+            <h1>Interior Design</h1>
+        </div>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="/main">MAIN</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+                <li><a href="/my-design">MY DESIGN</a></li>
+                <li><a href="/project">PROJECT</a></li>
+                <li><a href="/purpose">PURPOSE</a></li>
+            </ul>
+        </nav>
     </header>
 </body>
 </html>

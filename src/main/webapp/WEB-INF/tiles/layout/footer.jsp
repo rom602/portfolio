@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: khj1219
-  Date: 2018-05-14
-  Time: 오후 3:07
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,6 +5,22 @@
     <link rel="stylesheet" href="/resources/css/footer.css">
 </head>
 <body>
-    <h1>footer</h1>
+    <footer>
+    <hr>
+    <div class="footer">
+        <nav class="footer-menu">
+            <ul>
+                <li><a href="/main">MAIN</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+                <li><a href="/my-design">MY DESIGN</a></li>
+                <li><a href="/project">PROJECT</a></li>
+                <li><a href="/purpose">PURPOSE</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright © 2017 Interior Design. All rights reserved.
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

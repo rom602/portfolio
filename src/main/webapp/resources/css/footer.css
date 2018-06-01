@@ -1,0 +1,22 @@
+footer {
+    font-size: 12px;
+    line-height: 30px;
+    width: 100%;
+    color: #222;
+}
+.footer {
+    width: 1500px;
+    margin: 0 auto;
+}
+nav.footer-menu {
+    overflow: auto;
+}
+nav.footer-menu ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+nav.footer-menu ul li+li::before {
+    content: '|';
+    margin-right: 10px;
+}
