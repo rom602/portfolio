@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Interior Design</title>
+    <link rel="stylesheet" href="/resources/css/reset.css">
 </head>
 <body>
     <header id="header">

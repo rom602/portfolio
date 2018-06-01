@@ -9,44 +9,14 @@
 <html>
 <head>
     <title>header</title>
-    <style>
-    /* reset css */
-    html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    /* body 일괄 적용 css */
-    body {
-        font-family: "Nanum Gothic", sans-serif;
-    }
-    div.menu {
-        overflow: auto;
-        border-top: 1px solid #e4e4e4;
-    }
-    div.main-title {
-        padding: 20px 0;
-        text-align: center;
-        border-top: 1px solid #e4e4e4;
-    }
-    ul {
-        text-align: center;
-        margin: 20px 0;
-    }
-    li {
-        display: inline-block;
-        padding-right: 40px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #222;
-    }
-    </style>
+    <link rel="stylesheet" href="/resources/css/header.css">
 </head>
 <body>
-    <div class="main-title">
+    <header class="header">
+    <div class="header-title">
         <h1>Interior Design</h1>
     </div>
-    <div class="menu">
+    <nav class="header-menu">
         <ul>
             <li><a href="/main">MAIN</a></li>
             <li><a href="/profile">PROFILE</a></li>
@@ -54,6 +24,7 @@
             <li><a href="/project">PROJECT</a></li>
             <li><a href="/purpose">PURPOSE</a></li>
         </ul>
-    </div>
+    </nav>
+    </header>
 </body>
 </html>

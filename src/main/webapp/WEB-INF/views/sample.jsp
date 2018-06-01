@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html"; charset="EUC-KR">
-    <link rel="stylesheet" href="/resources/css/main.css"/>
     <title>Title</title>
     <style>
         .menu {

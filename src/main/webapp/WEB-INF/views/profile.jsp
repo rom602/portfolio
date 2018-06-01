@@ -3,41 +3,11 @@
 <html>
 <head>
     <title>Profile</title>
-    <link rel="stylesheet" href="/resources/css/main.css"/>
-    <style>
-        /* reset css */
-        html, body, h1, h2, h3, h4, h5, h6, p, a {
-            margin: 0;
-            padding: 0;
-        }
-        /* body 일괄 적용 css */
-        body {
-            font-family: "Nanum Gothic", sans-serif;
-        }
-        .main-content {
-            width: 100%;
-            background: #ddd;
-        }
-        .main-image {
-            overflow: hidden;
-            height: 400px;
-            margin: 0 4em 0 4em;
-            padding-top: 1em;
-        }
-        .main-image:after {
-            clear: both;
-        }
-        .description {
-            overflow: hidden;
-            width: 40%;
-            text-align: center;
-            line-height: 1.6em;
-        }
-    </style>
+    <link rel="stylesheet" href="/resources/css/profile.css"/>
 </head>
 <body>
-<div class = "main-content">
-    <div class="main-image">
+<div class = "profile-content">
+    <div class="profile-image">
         <div style="float: left" class="description">
             Interior Design's Market Live 2018 Introduces Designers to New Brands
             On the eve of NYCxDesign, brands offered designers a look at their
@@ -62,7 +32,7 @@
         <img style="float:right; height: 100%" src="http://localhost:8080/resources/images/main1.jpg" alt="image error">
     </div>
     <hr>
-    <div class="main-image">
+    <div class="profile-image">
         <img style="float:left; height: 100%" src="http://localhost:8080/resources/images/main2.jpg" alt="image error">
         <div style="float:right;" class="description">
             Interior Design's Market Live 2018 Introduces Designers to New Brands
@@ -87,7 +57,7 @@
         </div>
     </div>
     <hr>
-    <div class="main-image">
+    <div class="profile-image">
         <div style="float: left;" class="description">
             Interior Design's Market Live 2018 Introduces Designers to New Brands
             On the eve of NYCxDesign, brands offered designers a look at their

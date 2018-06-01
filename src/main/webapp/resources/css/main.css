@@ -1,0 +1,72 @@
+.main {
+    position: relative;
+    height: calc(385px + 732px);
+}
+/* 슬라이드 */
+.slider {
+    height: 385px;
+    width: 1900px;
+    background: #f1f1f1;
+}
+.slider img {
+    /* absolute 요소들 간 우선순위, 숫자가 높을 수록 보여지는 우선순위가 높아집니다. */
+    position: absolute;
+    height: 385px;
+    width: calc(1900px * 0.8);
+    left: 10%;
+    z-index: 1;
+    opacity:0;
+    /* 이미지 페이드아웃, 페이드인 효과 */
+    transition: opacity 0.5s;
+}
+/* active 클래스를 가진 슬라이드는 불투명도를 1로 줘서 보이도록 처리 */
+.slider img.active {
+    opacity: 1;
+}
+.card {
+    position: absolute;
+    left: 10%;
+    width: calc(1900px * 0.8);
+    margin-top: 20px;
+}
+.row .item {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: calc(1900px * 0.8 / 3 - 10px);
+    height: 332px;
+    margin: 10px 0;
+}
+.row .item+.item {
+    margin-left: 15px;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.zoom {
+    transition: 0.5s ease;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+.item:hover .image {
+    opacity: 0.3;
+}
+.item:hover .zoom {
+    opacity: 1;
+}
+/*@media (min-width: 1200px) {
+    .card {
+        width: 1170px;
+    }
+}
+@media (min-width: 768px) {
+    .row img::after {
+        clear: both;
+    }
+}*/

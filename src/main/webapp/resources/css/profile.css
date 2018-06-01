@@ -1,0 +1,19 @@
+.profile-content {
+    width: 100%;
+    background: #f1f1f1;
+}
+.profile-image {
+    overflow: hidden;
+    height: 400px;
+    margin: 0 4em 0 4em;
+    padding-top: 1em;
+}
+.profile-image:after {
+    clear: both;
+}
+.description {
+    overflow: hidden;
+    width: 40%;
+    text-align: center;
+    line-height: 1.6em;
+}
