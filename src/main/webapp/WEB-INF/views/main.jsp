@@ -11,10 +11,12 @@
 <%-- https://ko.wix.com/website-template/view/html/1050 --%>
 <div class="main">
     <div class="slider">
-        <img class='active' src="http://localhost:8080/resources/images/slide1.jpg"/>
-        <img src="http://localhost:8080/resources/images/slide2.jpg"/>
-        <img src="http://localhost:8080/resources/images/slide3.jpg"/>
-        <img src="http://localhost:8080/resources/images/slide4.jpg"/>
+        <div class="slides">
+            <img class='active' src="http://localhost:8080/resources/images/slide1.jpg"/>
+            <img src="http://localhost:8080/resources/images/slide2.jpg"/>
+            <img src="http://localhost:8080/resources/images/slide3.jpg"/>
+            <img src="http://localhost:8080/resources/images/slide4.jpg"/>
+        </div>
     </div>
     <div class="card">
         <h2>PREVIEW</h2>
@@ -22,25 +24,19 @@
             <div class="item">
                 <img class="image" src="http://localhost:8080/resources/images/card1.jpg"/>
                 <div class="zoom">
-                    <div class="text">
-                        Title<br>description
-                    </div>
+                    Title<br>description
                 </div>
             </div>
             <div class="item">
                 <img class="image" src="http://localhost:8080/resources/images/card1.jpg"/>
                 <div class="zoom">
-                    <div class="text">
-                        Title<br>description
-                    </div>
+                    Title<br>description
                 </div>
             </div>
             <div class="item">
                 <img class="image" src="http://localhost:8080/resources/images/card1.jpg"/>
                 <div class="zoom">
-                    <div class="text">
-                        Title<br>description
-                    </div>
+                    Title<br>description
                 </div>
             </div>
         </div>
@@ -48,25 +44,19 @@
             <div class="item">
                 <img class="image" src="http://localhost:8080/resources/images/card2.jpg"/>
                 <div class="zoom">
-                    <div class="text">
-                        Title<br>description
-                    </div>
+                    Title<br>description
                 </div>
             </div>
             <div class="item">
                 <img class="image" src="http://localhost:8080/resources/images/card2.jpg"/>
                 <div class="zoom">
-                    <div class="text">
-                        Title<br>description
-                    </div>
+                    Title<br>description
                 </div>
             </div>
             <div class="item">
                 <img class="image" src="http://localhost:8080/resources/images/card2.jpg"/>
                 <div class="zoom">
-                    <div class="text">
-                        Title<br>description
-                    </div>
+                    Title<br>description
                 </div>
             </div>
         </div>
@@ -75,7 +65,7 @@
 <script>
     /* 메인 슬라이드 */
     (function(){
-        var firstSlide = document.querySelector('.slider>img');
+        var firstSlide = document.querySelector('.slider>.slides>img');
 
         setInterval(function(){
             var activeSlide = document.querySelector('.active');
