@@ -13,16 +13,6 @@ public class RestSampleController {
 
     @Autowired
     private TestUserRepository testUserRepository;
-    /**
-     * @methodName : index
-     * @author : khj1219
-     * @date : 2018.05.08. 오후 12:01:15
-     * @explain : Hello Spring Boot!!
-     **/
-    @GetMapping("/")
-    public String index() {
-        return "Hello Spring Boot!!";
-    }
 
     /**
      * @methodName : getUserList

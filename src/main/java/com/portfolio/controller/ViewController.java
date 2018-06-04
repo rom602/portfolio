@@ -17,7 +17,17 @@ public class ViewController {
         return "sample";
     }
 
-
+    /**
+     * @methodName : index
+     * @author : khj1219
+     * @date : 2018.06.04. 오후 05:45:50
+     * @explain : main page redirect
+     **/
+    @GetMapping(value = "/")
+    public String index() {
+        return "redirect:/main";
+    }
+    
     /**
      * @methodName : main
      * @author : khj1219
