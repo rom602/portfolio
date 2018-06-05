@@ -9,6 +9,7 @@
 <body>
 <%-- https://codepen.io/jaehwy/pen/LkvPEX --%>
 <%-- https://ko.wix.com/website-template/view/html/1050 --%>
+<%-- http://www.e-thehome.com/ --%>
 <div class="main">
     <div class="slider">
         <div class="slides">

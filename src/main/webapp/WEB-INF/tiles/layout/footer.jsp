@@ -5,9 +5,7 @@
     <link rel="stylesheet" href="/resources/css/footer.css">
 </head>
 <body>
-    <footer>
-    <hr>
-    <div class="footer">
+    <footer class="footer">
         <nav class="footer-menu">
             <ul>
                 <li><a href="/main">MAIN</a></li>
@@ -20,7 +18,6 @@
         <div class="copyright">
             Copyright © 2017 Interior Design. All rights reserved.
         </div>
-    </div>
     </footer>
 </body>
 </html>
