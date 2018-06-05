@@ -11,16 +11,21 @@
 }
 .slider .slides {
     height: 100%;
-    width: 1500px;
+    width: 1120px;
     background: #f1f1f1;
     /* width에 따라 중앙 정렬*/
     margin: 0 auto;
+}
+.slider .radio {
+    width: 1120px;
+    margin: 0 auto;
+    text-align: center;
 }
 .slider .slides img {
     position: absolute;
     /* absolute 요소들 간 우선순위, 숫자가 높을 수록 보여지는 우선순위가 높아집니다. */
     height: 385px;
-    width: 1500px;
+    width: 1120px;
     z-index: 1;
     opacity:0;
     /* 이미지 페이드아웃, 페이드인 효과 */
@@ -33,7 +38,7 @@
 /* 카드 뷰 */
 .card {
     height: 800px;
-    width: 1500px;
+    width: 1120px;
     margin: 0 auto;
     margin-top: 20px;
 }

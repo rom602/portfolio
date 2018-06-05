@@ -2,7 +2,7 @@
     width: 100%;
 }
 div.header-title {
-    width: 1500px;
+    width: 1120px;
     padding: 20px 0;
     margin: 0 auto;
     text-align: center;
@@ -10,11 +10,11 @@ div.header-title {
 }
 nav.header-menu {
     border-top: 1px solid #e4e4e4;
-    min-width: 1500px;
+    min-width: 1120px;
     height: 55px;
 }
 nav.header-menu ul {
-    width: 1500px;
+    width: 1120px;
     text-align: center;
     position: relative;
     height: 100%;

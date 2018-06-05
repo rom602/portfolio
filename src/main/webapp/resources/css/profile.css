@@ -1,21 +1,21 @@
 .profile {
     width: 100%;
+    background: #f1f1f1;
 }
 .content {
     overflow: hidden;
-    height: 400px;
-    min-width: 1500px;
-    background: #f1f1f1;
-    margin: 0 auto;
-    padding: 2em;
+    height: 210px;
+    width: 980px;
     border-bottom: 1px solid #e4e4e4;
+    padding: 20px;
+    margin: 0 auto;
 }
 .content:after {
     clear: both;
 }
 .description {
     overflow: hidden;
-    width: 40%;
+    width: 50%;
     text-align: center;
     line-height: 1.6em;
 }

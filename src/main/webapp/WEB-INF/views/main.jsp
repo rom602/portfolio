@@ -18,6 +18,12 @@
             <img src="http://localhost:8080/resources/images/slide3.jpg"/>
             <img src="http://localhost:8080/resources/images/slide4.jpg"/>
         </div>
+        <div class="radio">
+            <input type="radio" name="radio" checked>
+            <input type="radio" name="radio" checked>
+            <input type="radio" name="radio" checked>
+            <input type="radio" name="radio" checked>
+        </div>
     </div>
     <div class="card">
         <h2>PREVIEW</h2>
