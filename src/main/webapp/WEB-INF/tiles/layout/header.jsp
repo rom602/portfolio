@@ -15,9 +15,9 @@
                     <a href="/main">MAIN</a>
                     <div class="sub-menu">
                         <ul>
-                            <li>sub1</li>
-                            <li>sub2</li>
-                            <li>sub3</li>
+                            <li><a href="/main">sub1</a></li>
+                            <li><a href="/main">sub2</a></li>
+                            <li><a href="/main">sub3</a></li>
                         </ul>
                     </div>
                 </li>
@@ -25,9 +25,9 @@
                     <a href="/profile">PROFILE</a>
                     <div class="sub-menu">
                         <ul>
-                            <li>sub1</li>
-                            <li>sub2</li>
-                            <li>sub3</li>
+                            <li><a href="/profile">sub1</a></li>
+                            <li><a href="/profile">sub2</a></li>
+                            <li><a href="/profile">sub3</a></li>
                         </ul>
                  </div>
                 </li>
@@ -35,9 +35,9 @@
                     <a href="/my-design">MY DESIGN</a>
                     <div class="sub-menu">
                         <ul>
-                            <li>sub1</li>
-                            <li>sub2</li>
-                            <li>sub3</li>
+                            <li><a href="/my-design">sub1</a></li>
+                            <li><a href="/my-design">sub2</a></li>
+                            <li><a href="/my-design">sub3</a></li>
                         </ul>
                     </div>
                 </li>
@@ -45,9 +45,9 @@
                     <a href="/project">PROJECT</a>
                     <div class="sub-menu">
                         <ul>
-                            <li>sub1</li>
-                            <li>sub2</li>
-                            <li>sub3</li>
+                            <li><a href="/project">sub1</a></li>
+                            <li><a href="/project">sub2</a></li>
+                            <li><a href="/project">sub3</a></li>
                         </ul>
                     </div>
                 </li>
@@ -55,9 +55,9 @@
                     <a href="/purpose">PURPOSE</a>
                     <div class="sub-menu">
                         <ul>
-                            <li>sub1</li>
-                            <li>sub2</li>
-                            <li>sub3</li>
+                            <li><a href="/purpose">sub1</a></li>
+                            <li><a href="/purpose">sub2</a></li>
+                            <li><a href="/purpose">sub3</a></li>
                         </ul>
                     </div>
                 </li>

@@ -11,16 +11,21 @@ div.header-title {
 nav.header-menu {
     border-top: 1px solid #e4e4e4;
     min-width: 1500px;
+    height: 55px;
 }
 nav.header-menu ul {
     width: 1500px;
     text-align: center;
-    margin: 20px auto;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
 }
 nav.header-menu>ul>li {
     list-style-type: none;
     display: inline-block;
     margin-right: 40px;
+    height: 100%;
+    line-height: 50px;
     font-size: 18px;
     color: #222;
     border: #222222;
@@ -28,22 +33,28 @@ nav.header-menu>ul>li {
 }
 nav.header-menu>ul>li>a {
     text-decoration: none;
+    height: 100%;
 }
 nav.header-menu ul li .sub-menu ul {
     list-style-type: none;
-    display: none;
-    margin-top: 20px;
+    opacity: 0;
     padding: 0;
     font-size: 14px;
     position: absolute;
     background: black;
-    color: white;
     z-index: 120;
     width: 120px;
+    height: auto;
+    top: 55px;
 }
-nav.header-menu ul li .sub-menu ul li{
+.sub-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.sub-menu ul li{
     margin: 10px;
+    line-height: 1.5;
 }
-nav.header-menu ul li:hover .sub-menu ul {
-    display: block;
+nav.header-menu ul li:hover .sub-menu ul, .sub-menu ul:hover .sub-menu ul {
+    opacity: 1;
 }
