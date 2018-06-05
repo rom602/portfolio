@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Purpose</title>
+    <title>purpose</title>
 </head>
 <body>
 </body>

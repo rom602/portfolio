@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html"; charset="EUC-KR">
-    <title>Title</title>
+    <title>sample</title>
     <style>
         .menu {
             width: 100%;

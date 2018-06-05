@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>My Design</title>
+    <title>main</title>
     <link rel="stylesheet" href="/resources/css/main.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>

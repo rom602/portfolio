@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Project</title>
+    <title>project</title>
 </head>
 <body>
 </body>

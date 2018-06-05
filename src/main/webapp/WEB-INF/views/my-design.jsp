@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>main</title>
+    <title>my-design</title>
 </head>
 <body>
 </body>

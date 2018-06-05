@@ -2,12 +2,12 @@
 
 <html>
 <head>
-    <title>Profile</title>
+    <title>profile</title>
     <link rel="stylesheet" href="/resources/css/profile.css"/>
 </head>
 <body>
-<div class = "profile-content">
-    <div class="profile-image">
+<div class = "profile">
+    <div class="content">
         <div style="float: left" class="description">
             Interior Design's Market Live 2018 Introduces Designers to New Brands
             On the eve of NYCxDesign, brands offered designers a look at their
@@ -31,8 +31,7 @@
         </div>
         <img style="float:right; height: 100%" src="http://localhost:8080/resources/images/main1.jpg" alt="image error">
     </div>
-    <hr>
-    <div class="profile-image">
+    <div class="content">
         <img style="float:left; height: 100%" src="http://localhost:8080/resources/images/main2.jpg" alt="image error">
         <div style="float:right;" class="description">
             Interior Design's Market Live 2018 Introduces Designers to New Brands
@@ -56,8 +55,7 @@
             few weeks of products and parties.
         </div>
     </div>
-    <hr>
-    <div class="profile-image">
+    <div class="content">
         <div style="float: left;" class="description">
             Interior Design's Market Live 2018 Introduces Designers to New Brands
             On the eve of NYCxDesign, brands offered designers a look at their
@@ -81,7 +79,6 @@
         </div>
         <img style="float:right; height: 100%" src="http://localhost:8080/resources/images/main3.jpg" alt="image error">
     </div>
-    <hr>
 </div>
 </body>
 </html>
