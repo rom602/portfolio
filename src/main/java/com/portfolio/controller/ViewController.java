@@ -23,7 +23,7 @@ public class ViewController {
      * @date : 2018.06.04. 오후 05:45:50
      * @explain : main page redirect
      **/
-    @GetMapping(value = "/")
+    @GetMapping("/")
     public String index() {
         return "redirect:/main";
     }

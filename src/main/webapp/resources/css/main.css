@@ -37,20 +37,19 @@
 }
 /* 카드 뷰 */
 .card {
-    height: 800px;
     width: 1120px;
     margin: 0 auto;
     margin-top: 20px;
 }
 .row {
-    margin-top: 15px;
+    height: 262.08px;
 }
 .row .item {
     position: relative;
     cursor: pointer;
     float: left;
     width: calc(33.3% - 10px);
-    height: 326.48px;
+    height: 242.08px;
     margin: 10px 0;
 }
 .row .item+.item {
@@ -80,9 +79,9 @@
 .item:hover .zoom {
     opacity: 1;
 }
-.row::after {
+.card::after {
     content: '';
-    clear: left;
+    clear: both;
 }
 /*@media (min-width: 1200px) {
     .card {

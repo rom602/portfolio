@@ -7,7 +7,6 @@
     color: #222;
 }
 nav.footer-menu, div.copyright {
-    overflow: auto;
     text-align: center;
 }
 nav.footer-menu ul li {

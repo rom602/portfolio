@@ -10,7 +10,7 @@
     padding: 20px;
     margin: 0 auto;
 }
-.content:after {
+.content::after {
     clear: both;
 }
 .description {
