@@ -23,10 +23,10 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <!-- The dots/circles -->
         <div class="dot-wrapper">
+            <span class="dot" onclick="currentSlide(0)"></span>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
     <div class="card">
@@ -74,25 +74,64 @@
     </div>
 </div>
 <script>
+    var slideIdx = 0, timer = 0;
+    var slider = document.querySelector('.slider');
+    var firstSlide = document.querySelector('.slider>.slides>img');
+
     /* 메인 슬라이드 */
-    /*(function(){
-        var firstSlide = document.querySelector('.slider>.slides>img');
+    (function(){
+        autoStart();
+    }());
 
-        setInterval(function(){
+    /* 슬라이드 자동 실행 */
+     function autoStart(){
+        timer = setInterval(function(){
             var activeSlide = document.querySelector('.active');
-
             var postSlide = (activeSlide.nextElementSibling !== null ? activeSlide.nextElementSibling : firstSlide);
-
             activeSlide.classList.remove('active');
             postSlide.classList.add('active');
         }, 2000);
-    })();*/
+    };
 
-    var radio = document.querySelector('.slider>.radio>input');
-    radio.addEventListener('click', function(e){
-        e.target.
-        alert('AAA');
+     /* 슬라이드 자동 멈춤 */
+    function autoStop() {
+        clearInterval(timer);
+        timer = 0;
+    };
+
+    /* 마우스 집입시 슬라이드 자동 멈춤 */
+    slider.addEventListener('mouseenter', function(e){
+        autoStop();
     });
+
+    /* 마우스 벗어날 경우 슬라이드 자동 실행 */
+    slider.addEventListener('mouseleave', function(e){
+        autoStart();
+    });
+
+    /* 좌우 슬라이드 */
+    function plusSlides(idx) {
+        showSlide(slideIdx += idx);
+    };
+
+    /* 라디오 슬라이드 */
+    function currentSlide(idx) {
+        showSlide( slideIdx = idx );
+    };
+
+    /* 슬라이더 */
+    function showSlide(idx) {
+        var activeSlide = document.querySelector('.active');
+        var slidesClassList = document.querySelector('.slider>.slides').querySelectorAll('img');
+        activeSlide.classList.remove('active');
+        if(idx >= slidesClassList.length){
+            slideIdx = 0, idx = 0;
+        } else if(idx < 0){
+            slideIdx = 3, idx = 3;
+        }
+        slidesClassList[idx].classList.add('active');
+    };
+
 </script>
 </body>
 </html>
