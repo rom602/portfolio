@@ -10,23 +10,25 @@
 <%-- https://ko.wix.com/website-template/view/html/1050 --%>
 <%-- http://www.e-thehome.com/ --%>
 <%-- https://www.w3schools.com/howto/howto_js_slideshow.asp --%>
+<%-- http://wsss.tistory.com/427 --%>
+<%-- https://tutorialzine.com/2010/03/mosaic-slideshow-jquery-css --%>
 <div class="main">
     <div class="slider">
         <div class="slides">
-            <img class='active' src="http://localhost:8080/resources/images/slide1.jpg"/>
-            <img src="http://localhost:8080/resources/images/slide2.jpg"/>
-            <img src="http://localhost:8080/resources/images/slide3.jpg"/>
-            <img src="http://localhost:8080/resources/images/slide4.jpg"/>
+            <img class='active scaleUp' src="http://localhost:8080/resources/images/slide1.jpg"/>
+            <img class='scaleDown' src="http://localhost:8080/resources/images/slide2.jpg"/>
+            <img class='scaleUp' src="http://localhost:8080/resources/images/slide3.jpg"/>
+            <img class='scaleDown' src="http://localhost:8080/resources/images/slide4.jpg"/>
         </div>
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
         <!-- The dots/circles -->
         <div class="dot-wrapper">
-            <span class="dot" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="radioSlide(0)"></span>
+            <span class="dot" onclick="radioSlide(1)"></span>
+            <span class="dot" onclick="radioSlide(2)"></span>
+            <span class="dot" onclick="radioSlide(3)"></span>
         </div>
     </div>
     <div class="card">
@@ -110,12 +112,12 @@
     });
 
     /* 좌우 슬라이드 */
-    function plusSlides(idx) {
+    function plusSlide(idx) {
         showSlide(slideIdx += idx);
     };
 
     /* 라디오 슬라이드 */
-    function currentSlide(idx) {
+    function radioSlide(idx) {
         showSlide( slideIdx = idx );
     };
 
