@@ -15,10 +15,10 @@
 <div class="main">
     <div class="slider">
         <div class="slides">
-            <img class='active scaleUp' src="http://localhost:8080/resources/images/slide1.jpg"/>
-            <img class='scaleDown' src="http://localhost:8080/resources/images/slide2.jpg"/>
-            <img class='scaleUp' src="http://localhost:8080/resources/images/slide3.jpg"/>
-            <img class='scaleDown' src="http://localhost:8080/resources/images/slide4.jpg"/>
+            <img class='active' src="http://localhost:8080/resources/images/slide1.jpg"/>
+            <img src="http://localhost:8080/resources/images/slide2.jpg"/>
+            <img src="http://localhost:8080/resources/images/slide3.jpg"/>
+            <img src="http://localhost:8080/resources/images/slide4.jpg"/>
         </div>
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
